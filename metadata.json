@@ -1,0 +1,7 @@
+{
+  "name": "Vanguard Athletics & Nutrition",
+  "description": "Adaptive workout regimen generator, interactive progress analytics, and personalized nutrition health dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
