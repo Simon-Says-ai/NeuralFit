@@ -1,3 +1,4 @@
+import heroImage from '../assets/images/hero_athlete_training_1792351355182.jpg';
 import React, { useState } from 'react';
 import {
   Calendar,
@@ -12,6 +13,7 @@ import {
 import { useFitness } from '../context/FitnessContext';
 import { WorkoutDay } from '../types/fitness';
 
+
 interface WorkoutPlanViewProps {
   onOpenAICoach: () => void;
 }
@@ -22,7 +24,6 @@ export const WorkoutPlanView: React.FC<WorkoutPlanViewProps> = ({ onOpenAICoach 
 
   const selectedDay: WorkoutDay = workoutPlan.days[selectedDayIndex] || workoutPlan.days[0];
 
-  const heroImage = '/src/assets/images/hero_athlete_training_1792351355182.jpg';
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">

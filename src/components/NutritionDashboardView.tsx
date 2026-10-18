@@ -1,3 +1,4 @@
+import  nutritionImage from '../assets/images/nutrition_meal_showcase_1792351383784.jpg';
 import React, { useState } from 'react';
 import {
   Droplet,
@@ -90,7 +91,7 @@ export const NutritionDashboardView: React.FC<NutritionDashboardViewProps> = ({ 
   const [fatG, setFatG] = useState<string>('12');
   const [serving, setServing] = useState<string>('1 standard portion');
 
-  const nutritionImage = '/src/assets/images/nutrition_meal_showcase_1792351383784.jpg';
+  
 
   // Calculate totals from today's meals
   const totals = dailyNutrition.meals.reduce(

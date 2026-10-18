@@ -1,3 +1,4 @@
+import avatarImage from '../assets/images/avatar_fitness_user_1792351370174.jpg';
 import React, { useState, useEffect } from 'react';
 import {
   User,
@@ -53,7 +54,7 @@ export const ProfileView: React.FC = () => {
   const [dietaryPreference, setDietaryPreference] = useState<DietaryPreference>(profile.dietaryPreference);
   const [isSavedFeedback, setIsSavedFeedback] = useState(false);
 
-  const avatarImage = '/src/assets/images/avatar_fitness_user_1792351370174.jpg';
+  
 
   // Keep local inputs synchronized whenever the profile object changes in context
   useEffect(() => {
