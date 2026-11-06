@@ -4,6 +4,7 @@ import { useFitness } from '../context/FitnessContext';
 
 interface TopNavProps {
   onOpenAICoach: () => void;
+  onOpenDeployGuide: () => void;
 }
 
 interface NavLinkItem {
@@ -12,7 +13,7 @@ interface NavLinkItem {
   badge?: string;
 }
 
-export const TopNav: React.FC<TopNavProps> = ({ onOpenAICoach }) => {
+export const TopNav: React.FC<TopNavProps> = ({ onOpenAICoach, onOpenDeployGuide }) => {
   const { activeView, setActiveView, activeWorkoutDay, workoutPlan, startLiveWorkout } = useFitness();
 
   const navLinks: NavLinkItem[] = [
